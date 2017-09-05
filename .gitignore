@@ -2,4 +2,3 @@ target/
 .idea/**
 /src/test/resources/parallel/features/**.feature
 /src/test/java/parallel/**.java
-/src/test/resources/parallel/features/MyTest_scenario001_run001_IT.feature
