@@ -1,0 +1,14 @@
+package parallel.runners;
+
+import cucumber.api.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@CucumberOptions(
+    monochrome = false,
+    features = {"classpath:parallel/features/[FEATURE_FILE_NAME].feature"},
+    format = {"json:target/cucumber-report/[FEATURE_FILE_NAME].json"},
+    strict = false,
+    dryRun = false
+)
+public class [FEATURE_FILE_NAME] {
+}
