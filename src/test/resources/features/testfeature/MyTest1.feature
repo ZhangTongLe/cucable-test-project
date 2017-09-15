@@ -9,3 +9,5 @@ Feature: test feature
     Given this is step 1
     When I do step 2
     Then I expect step 3
+
+  Scenario: This is aother scenario without steps
