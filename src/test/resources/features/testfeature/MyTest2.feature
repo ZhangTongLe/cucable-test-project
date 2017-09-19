@@ -14,3 +14,5 @@ Feature: test feature 2
 
   Scenario: This is a scenario with 1 step and background
     Then I expect a result
+
+  Scenario: This is an empty scenario with background
