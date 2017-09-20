@@ -8,8 +8,8 @@ Feature: test feature 2
   Scenario: This is a scenario with 3 steps and background
     Given this is step 1
     When I do step 2
-      | bla | blubb |
-      | bla | blubb |
+      | scenarioData1 | scenarioData2 |
+      | scenarioData3 | scenarioData4 |
     Then I expect step 3
 
   Scenario: This is a scenario with 1 step and background
