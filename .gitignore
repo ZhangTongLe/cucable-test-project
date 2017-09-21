@@ -1,4 +1,5 @@
 target/
 .idea/**
-/src/test/resources/parallel/features/**.feature
-/src/test/java/parallel/**.java
+/src/test/resources/parallel/features/
+/src/test/java/parallel/
+cucable-test-project.iml
