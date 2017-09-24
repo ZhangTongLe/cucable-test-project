@@ -20,5 +20,5 @@ Feature: test feature
     Given this is step 1
     When I search for
       | country | Germany |
-      | city    | Berlin  |
-    Then I get search results
+      | city    |         |
+    Then I get search results from Germany
