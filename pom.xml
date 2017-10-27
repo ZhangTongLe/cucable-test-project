@@ -6,12 +6,14 @@
 
     <groupId>de.benjamin-bischoff</groupId>
     <artifactId>cucable-test-project</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.9</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.failsafe.plugin.version>2.20</maven.failsafe.plugin.version>
+        <maven.failsafe.plugin.version>2.20.1</maven.failsafe.plugin.version>
+        <junit.version>4.12</junit.version>
+        <cucumber.version>1.2.5</cucumber.version>
     </properties>
 
     <build>
@@ -19,7 +21,7 @@
             <plugin>
                 <groupId>com.trivago.rta</groupId>
                 <artifactId>cucable-plugin</artifactId>
-                <version>0.0.8</version>
+                <version>0.0.9</version>
                 <executions>
                     <execution>
                         <id>generate-test-resources</id>
@@ -30,8 +32,18 @@
                         <configuration>
                             <sourceRunnerTemplateFile>src/test/resources/parallel/cucable.template
                             </sourceRunnerTemplateFile>
+
+                            <!-- process all features in the given directory -->
                             <sourceFeatures>src/test/resources/features</sourceFeatures>
+
+                            <!-- process a specific file in the given directory -->
+                            <!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature</sourceFeatures>-->
+
+                            <!-- process a specific file and a specific line number in the given directory -->
+                            <!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature:12</sourceFeatures>-->
+
                             <generatedFeatureDirectory>src/test/resources/parallel/features</generatedFeatureDirectory>
+
                             <generatedRunnerDirectory>src/test/java/parallel</generatedRunnerDirectory>
                             <numberOfTestRuns>1</numberOfTestRuns>
                         </configuration>
@@ -46,8 +58,10 @@
                     <execution>
                         <goals>
                             <goal>integration-test</goal>
-                            <goal>verify</goal>
                         </goals>
+                        <configuration>
+                            <forkCount>2</forkCount>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -55,15 +69,9 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-spring</artifactId>
-            <version>1.2.5</version>
+            <version>${cucumber.version}</version>
         </dependency>
     </dependencies>
 </project>
