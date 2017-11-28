@@ -6,7 +6,7 @@
 
     <groupId>de.benjamin-bischoff</groupId>
     <artifactId>cucable-test-project</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,7 +21,7 @@
             <plugin>
                 <groupId>com.trivago.rta</groupId>
                 <artifactId>cucable-plugin</artifactId>
-                <version>0.1.0</version>
+                <version>${project.version}</version>
                 <executions>
                     <execution>
                         <id>generate-test-resources</id>
@@ -44,8 +44,7 @@
 
                             <!-- include scenarios with certain tags -->
                             <includeScenarioTags>
-                                <param>@scenario1Tag1</param>
-                                <param>@scenario1Tag2</param>
+                                <!--<param>@scenarioTag1</param>-->
                             </includeScenarioTags>
 
                             <!-- exclude scenarios with certain tags -->
