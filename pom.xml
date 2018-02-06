@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.failsafe.plugin.version>2.20.1</maven.failsafe.plugin.version>
         <junit.version>4.12</junit.version>
-        <cucumber.version>1.2.5</cucumber.version>
+        <cucumber.version>2.3.1</cucumber.version>
     </properties>
 
     <build>
@@ -79,8 +79,8 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-spring</artifactId>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>
         </dependency>
     </dependencies>
