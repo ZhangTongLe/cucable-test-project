@@ -37,10 +37,10 @@
                             <sourceFeatures>src/test/resources/features</sourceFeatures>
 
                             <!-- process a specific file in the given directory -->
-                            <sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature:8:19</sourceFeatures>
+                            <sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature</sourceFeatures>
 
-                            <!-- process a specific file and a specific line number in the given directory -->
-                            <!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature:12</sourceFeatures>-->
+                            <!-- process a specific file and specific line numbers in the given directory -->
+                            <!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature:8:19</sourceFeatures>-->
 
                             <!-- include scenarios with certain tags -->
                             <includeScenarioTags>
