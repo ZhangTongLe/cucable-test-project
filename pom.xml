@@ -6,7 +6,7 @@
 
     <groupId>de.benjamin-bischoff</groupId>
     <artifactId>cucable-test-project</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,7 +37,7 @@
                             <sourceFeatures>src/test/resources/features</sourceFeatures>
 
                             <!-- process a specific file in the given directory -->
-                            <!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature</sourceFeatures>-->
+                            <sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature:8:19</sourceFeatures>
 
                             <!-- process a specific file and a specific line number in the given directory -->
                             <!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature:12</sourceFeatures>-->
